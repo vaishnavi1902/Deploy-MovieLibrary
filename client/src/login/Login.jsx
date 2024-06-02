@@ -23,7 +23,7 @@ const Login = () => {
     const { email, password } = data;
     try {
       //  console.log("hey");
-      const { data } = await axios.post('deploy-movie-library.vercel.app/login', {
+      const { data } = await axios.post('/api/auth/login', {
         email,
         password
       });
