@@ -20,15 +20,18 @@ app.use(cors(
 ));
 // Middleware
 app.use(express.json());
-app.use(cors());
+
+// app.use(cors());
 // Routes
 const authRoutes = require('./routes/authRoutes');
 const listRoutes = require('./routes/listRoutes')
 const movieRoutes = require('./routes/movieRoutes');
-
-app.get('/', (req, res) => {
-    res.send('products api running new deploy');
-});
+app.get("/",(req,res) => {
+    res.json("Hello");
+})
+// app.get('/', (req, res) => {
+//     res.send('products api running new deploy');
+// });
 
 app.use('/api/auth', authRoutes);
 app.use('/api/lists', listRoutes);
