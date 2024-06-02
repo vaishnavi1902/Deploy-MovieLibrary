@@ -10,7 +10,7 @@ const Register= () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('deploy-movie-library.vercel.app/register', {
+      const response = await fetch('deploy-movie-library.vercel.app/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password }),
