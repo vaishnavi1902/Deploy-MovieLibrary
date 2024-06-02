@@ -21,7 +21,6 @@ app.use(cors(
 // Middleware
 app.use(express.json());
 app.use(cors());
-
 // Routes
 const authRoutes = require('./routes/authRoutes');
 const listRoutes = require('./routes/listRoutes')
