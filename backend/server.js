@@ -13,7 +13,7 @@ connectDB();
 const app = express();
 app.use(cors(
     {
-        origin: ["https://Deploy-MovieLibrary.vercel.app"],
+        origin: ["https://deploy-movie-library-frontend.vercel.app/"],
         methods: ["POST","GET"],
         credentials : true
     }
