@@ -17,6 +17,7 @@ const Login = () => {
     email: '',
     password: '',
   })
+  axios.default.withCredentials = true ;
   const LoginsUser = async (e) => {
     e.preventDefault();
     const { email, password } = data;
