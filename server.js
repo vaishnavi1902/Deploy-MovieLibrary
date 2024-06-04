@@ -11,13 +11,7 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors(
-    {
-        origin: ["https://deploy-movie-library-frontend.vercel.app"],
-        methods: ["POST","GET"],
-        credentials : true
-    }
-));
+app.use(cors());
 // Middleware
 app.use(express.json());
 
